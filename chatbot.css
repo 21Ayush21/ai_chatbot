@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  max-width: 2000px;
+}
+
+.main-header {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  background: rgb(43, 43, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(43, 43, 43, 1) 0%,
+    rgba(84, 82, 82, 1) 69%
+  );
+}
+
+.lhs {
+  background-color: #454444;
+  flex: 1;
+}
+
+.rhs {
+  flex: 4;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(165, 163, 163);
+  overflow-y: scroll;
+  padding: 1rem;
+  flex: 1;
+}
+
+.chat-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgb(43, 43, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(43, 43, 43, 1) 0%,
+    rgba(84, 82, 82, 1) 69%
+  );
+}
+
+.input-box {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  outline: none;
+  border: 0.1rem solid #2b2b2b;
+}
+
+.send-button {
+  margin-left: 0.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 1.25rem;
+  background-color: #2b2b2b;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.instructions {
+  text-align: center;
+  color: white;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  max-width: 80%;
+  border: 0.1rem solid #2b2b2b;
+  word-wrap: break-word;
+}
+
+.sender {
+  background-color: #2b2b2b;
+  color: white;
+  align-self: flex-end;
+}
+
+.receiver {
+  background-color: white;
+  color: black;
+  align-self: flex-start;
+}
+
+.lhs p{
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+}

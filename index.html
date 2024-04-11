@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Market Helper</title>
+    <link rel="stylesheet" href="chatbot.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="lhs">
+        <div class="instructions">
+            <h3>HOW TO USE</h3>
+            <p>1.You can enter <strong>advice</strong> if you want investment advice</p>
+            <p>After that enter how long you want to invest for short , mid , long</p>
+            <p>Then enter your budget</p>
+            <p>Finally enter how much risk you can afford</p>
+            <hr>
+            <p>2.You can enter <strong>stockprice</strong> if you want to know about a particular stock's price</p>
+        </div>
+      </div>
+      <div class="rhs">
+        <div class="chat-container">
+          <header class="main-header">STOCK MARKET HELPER</header>
+          <div class="chat-box" id="chatBox"></div>
+          <div class="input-container">
+            <input
+              type="text"
+              placeholder="Type a message..."
+              class="input-box"
+              id="messageInput"
+            />
+            <button class="send-button" id="sendButton" onclick="sendMessage()">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+  </body>
+</html>
